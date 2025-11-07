@@ -1,0 +1,94 @@
+﻿/* reuse variables from orders.css if present */
+.co-wrap {
+    margin-top: 8px
+}
+
+.co-grid {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 18px
+}
+
+.co-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 0 10px 24px rgba(183,110,121,.08)
+}
+
+.co-h {
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 10px
+}
+
+.sum-list {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.sum-row {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--line)
+}
+
+    .sum-row:last-child {
+        border-bottom: none
+    }
+
+    .sum-row .qty {
+        color: var(--muted)
+    }
+
+    .sum-row .amt {
+        color: var(--rose);
+        font-weight: 600
+    }
+
+.sum-totals {
+    margin-top: 12px
+}
+
+    .sum-totals > div {
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 0;
+        color: var(--ink)
+    }
+
+    .sum-totals .grand {
+        border-top: 1px solid var(--line);
+        margin-top: 6px;
+        padding-top: 10px;
+        font-size: 18px;
+        color: var(--rose)
+    }
+
+.msg {
+    display: block;
+    margin: 6px 0 10px;
+    color: var(--muted)
+}
+
+    .msg.err {
+        color: var(--rose)
+    }
+
+.card.empty {
+    background: var(--chip);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 22px;
+    text-align: center
+}
+
+@media(max-width:860px) {
+    .co-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="CREEMESTUDIO.Admin.Admin" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Admin • <asp:ContentPlaceHolder ID="HeadTitle" runat="server" /></title>
+    <link href="Content/admin.css" rel="stylesheet" />
+    <style>
+      body{font-family:system-ui,Segoe UI,Arial,sans-serif;background:#f6f7fb}
+      .top{background:#111;color:#fff;padding:10px 16px;display:flex;justify-content:space-between;align-items:center}
+      .top a{color:#fff;margin-left:12px;text-decoration:none}
+      .wrap{display:flex;min-height:100vh}
+      .side{width:220px;background:#fff;border-right:1px solid #eee;padding:14px}
+      .side a{display:block;padding:10px 8px;border-radius:8px;color:#333;text-decoration:none}
+      .side a:hover{background:#f3f3f8}
+      .main{flex:1}
+      .content{padding:16px}
+    </style>
+</head>
+<body>
+<form runat="server">
+  <div class="top">
+    <div><strong>Crème Studio • Admin</strong></div>
+    <div>
+      <a href="../Home.aspx">Store</a>
+      <a href="../Logout.aspx">Logout</a>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <nav class="side">
+      <a href="Dashboard.aspx">Dashboard</a>
+      <a href="ManageProducts.aspx">Products</a>
+      <a href="ManageCategories.aspx">Categories</a>
+      <a href="ManageOrders.aspx">Orders</a>
+      <a href="ManageUser.aspx">Users</a>
+      <a href="ManageCoupons.aspx">Coupons</a>
+    </nav>
+    <main class="main">
+      <div class="content">
+        <asp:ContentPlaceHolder ID="AdminContent" runat="server" />
+      </div>
+    </main>
+  </div>
+</form>
+</body>
+</html>

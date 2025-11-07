@@ -1,0 +1,64 @@
+﻿.doc {
+    padding: 24px 0 48px;
+}
+
+.doc-title {
+    font: 700 28px/1.2 "Poppins", system-ui, sans-serif;
+    color: #3b2f2f;
+    margin-bottom: 6px;
+}
+
+.doc-sub {
+    color: #6f6161;
+    margin-bottom: 18px;
+}
+
+.doc-card {
+    background: #fff;
+    border: 1px solid #ecddd3;
+    border-radius: 16px;
+    padding: 16px 18px;
+    margin-bottom: 16px;
+    box-shadow: 0 6px 14px rgba(183,110,121,.06);
+}
+
+    .doc-card h3 {
+        font-size: 18px;
+        color: #3b2f2f;
+        margin-bottom: 8px;
+    }
+
+    .doc-card p, .doc-card li {
+        color: #584a4a;
+    }
+
+    .doc-card ul, .doc-card ol {
+        margin: 0 0 0 18px;
+    }
+
+.btn-gold {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: linear-gradient(135deg,#d4af37,#b76e79);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1px solid #d9c0b6;
+    color: #6a4f4f;
+    text-decoration: none;
+}
+
+.help-contact {
+    margin-top: 8px;
+    padding: 14px 16px;
+    border: 1px dashed #e6d6cc;
+    border-radius: 12px;
+    background: #fdf6f0;
+}

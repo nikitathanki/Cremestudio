@@ -1,0 +1,186 @@
+﻿/* ===============================
+   Crème Studio — Product Details
+   =============================== */
+:root {
+    --vanilla: #fdf6f0;
+    --rosebeige: #f3e5db;
+    --softgold: #d4af37;
+    --cocoa: #3b2f2f;
+    --ink: #111;
+    --border: #efe6df;
+}
+
+.pd-wrap {
+    margin: 28px 0
+}
+
+.pd-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px
+}
+
+.pd-title {
+    font-family: "Playfair Display",serif;
+    margin: 0 0 6px 0;
+    font-size: 28px;
+    color: var(--ink)
+}
+
+.pd-sub {
+    color: #7b6d62;
+    margin: 0 0 14px 0;
+    font-size: 14.5px
+}
+
+.pd-price {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 8px 0 14px
+}
+
+    .pd-price .now {
+        font-size: 24px;
+        font-weight: 800;
+        color: var(--ink)
+    }
+
+    .pd-price .mrp {
+        color: #8d7f74;
+        text-decoration: line-through
+    }
+
+.pd-badge {
+    display: inline-block;
+    background: #c0392b;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-size: 12px;
+    margin-left: 4px
+}
+
+.qty-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 12px 0
+}
+
+.qty {
+    width: 92px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 8px;
+    background: #fff
+}
+
+.pd-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap
+}
+
+    .pd-actions .btn-gold {
+        padding: 12px 18px
+    }
+
+    .pd-actions .btn-outline {
+        padding: 12px 18px
+    }
+
+.pd-meta {
+    margin-top: 18px;
+    color: #6f6157;
+    font-size: 14.5px
+}
+
+.pd-desc {
+    margin-top: 16px;
+    line-height: 1.65
+}
+
+    .pd-desc h4 {
+        font-size: 18px;
+        margin: 0 0 8px 0
+    }
+
+.gallery {
+    display: flex;
+    gap: 10px
+}
+
+.thumb {
+    width: 68px;
+    height: 68px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer
+}
+
+    .thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover
+    }
+
+.main-image {
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff
+}
+
+    .main-image img {
+        width: 100%;
+        height: auto;
+        display: block
+    }
+
+.rel-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px
+}
+
+@media(min-width:992px) {
+    .rel-grid {
+        grid-template-columns: repeat(4,1fr)
+    }
+}
+
+.rel-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden
+}
+
+    .rel-card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover
+    }
+
+    .rel-card .cap {
+        padding: 10px 12px;
+        font-size: 14px
+    }
+
+.breadcrumbs {
+    font-size: 13px;
+    color: #7a6e65;
+    margin-bottom: 10px
+}
+
+    .breadcrumbs a {
+        color: inherit;
+        opacity: .9
+    }
+
+    .breadcrumbs span {
+        opacity: .7
+    }

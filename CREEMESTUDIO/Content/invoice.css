@@ -1,0 +1,110 @@
+﻿/* ========== Invoice Page Styling ========== */
+.invoice-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    max-width: 850px;
+    margin: 30px auto;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: #3b2f2f;
+    line-height: 1.6;
+}
+
+    /* Header */
+    .invoice-box h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        color: #b76e79; /* rose-gold */
+        text-align: center;
+    }
+
+    .invoice-box h3 {
+        font-size: 22px;
+        margin-bottom: 8px;
+        color: #3b2f2f;
+    }
+
+    .invoice-box h4 {
+        font-size: 20px;
+        margin-top: 15px;
+        color: #3b2f2f;
+    }
+
+    /* Order Info */
+    .invoice-box p {
+        margin: 4px 0;
+        font-size: 15px;
+    }
+
+    .invoice-box .highlight {
+        font-weight: bold;
+        color: #b76e79;
+    }
+
+    /* Table */
+    .invoice-box table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+    }
+
+    .invoice-box th {
+        background: #f3e5db;
+        color: #3b2f2f;
+        font-weight: 600;
+        padding: 10px;
+        text-align: left;
+        border-bottom: 2px solid #d4af37; /* soft gold line */
+    }
+
+    .invoice-box td {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+        font-size: 15px;
+    }
+
+    .invoice-box tr:last-child td {
+        border-bottom: none;
+    }
+
+    /* Totals */
+    .invoice-box .totals {
+        margin-top: 20px;
+        padding: 15px;
+        border-top: 2px solid #d4af37;
+        background: #fdf6f0;
+        border-radius: 12px;
+    }
+
+        .invoice-box .totals p {
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            margin: 4px 0;
+        }
+
+        .invoice-box .totals h4 {
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            margin-top: 10px;
+            color: #b76e79;
+        }
+
+/* Print Button */
+.print-btn {
+    display: inline-block;
+    background: #b76e79;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+    .print-btn:hover {
+        background: #a05e68;
+    }

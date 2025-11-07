@@ -1,0 +1,119 @@
+﻿/* ===== Manage Products Styling ===== */
+
+.page-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0 20px;
+    color: #3b2f2f; /* deep cocoa */
+}
+
+/* Product form */
+.prod-form {
+    background: #fff;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+    .prod-form label {
+        font-weight: 500;
+        margin-bottom: 4px;
+        display: block;
+    }
+
+    .prod-form .form-control,
+    .prod-form .form-select {
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 8px 10px;
+        width: 100%;
+    }
+
+        .prod-form .form-control:focus,
+        .prod-form .form-select:focus {
+            border-color: #b76e79; /* rose gold */
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(183,110,121,0.2);
+        }
+
+    .prod-form .btn {
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-weight: 500;
+    }
+
+    .prod-form .btn-primary {
+        background: #b76e79; /* rose gold */
+        border: none;
+        color: #fff;
+    }
+
+        .prod-form .btn-primary:hover {
+            background: #9d5c67;
+        }
+
+    .prod-form .btn-secondary {
+        background: #f3e5db; /* beige */
+        border: 1px solid #d4af37; /* gold */
+        color: #3b2f2f;
+    }
+
+        .prod-form .btn-secondary:hover {
+            background: #e9d7ca;
+        }
+
+/* Message */
+.auth-msg,
+.text-danger {
+    color: #b00020;
+    font-size: 14px;
+}
+
+.text-success {
+    color: #0a8a43;
+    font-size: 14px;
+}
+
+/* GridView table */
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    .table th {
+        background: #fdf6f0; /* vanilla */
+        padding: 10px;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    .table td {
+        padding: 10px;
+        border-top: 1px solid #eee;
+    }
+
+.table-striped tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    color: #b76e79;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+    .btn-link:hover {
+        text-decoration: underline;
+    }
+
+    .btn-link.text-danger {
+        color: #d32f2f;
+    }

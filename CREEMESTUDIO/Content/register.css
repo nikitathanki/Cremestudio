@@ -1,0 +1,86 @@
+﻿/* ========== Registration Page Styles ========== */
+.auth-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.auth-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 2rem;
+    max-width: 420px;
+    width: 100%;
+}
+
+.auth-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #3b2f2f; /* deep cocoa */
+}
+
+.form-label, label {
+    font-weight: 500;
+    color: #3b2f2f;
+    margin-bottom: .3rem;
+}
+
+.form-control {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: .6rem .9rem;
+    font-size: .95rem;
+    transition: border-color .2s ease;
+}
+
+    .form-control:focus {
+        border-color: #b76e79; /* rose-gold */
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(183,110,121,0.2);
+    }
+
+.btn-gold {
+    background-color: #d4af37;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: .6rem 1rem;
+    border-radius: 8px;
+    width: 100%;
+    transition: background-color .2s ease;
+}
+
+    .btn-gold:hover {
+        background-color: #c09b2f;
+    }
+
+.auth-msg {
+    display: block;
+    margin-top: .8rem;
+    font-size: .9rem;
+    color: red;
+    text-align: center;
+}
+
+/* Password Eye Button */
+.pw-eye {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    opacity: 0.6;
+    transition: opacity .2s ease;
+}
+
+    .pw-eye:hover {
+        opacity: 1;
+    }
