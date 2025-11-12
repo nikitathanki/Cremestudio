@@ -1,0 +1,25 @@
+# Ignore build folders
+bin/
+obj/
+.vs/
+packages/
+
+# Ignore user-specific and temp files
+*.user
+*.suo
+*.cache
+*.log
+*.dbmdl
+*.jfm
+
+# Ignore publish profiles and settings
+*.Publish.xml
+*.pubxml
+*.pubxml.user
+*.config
+
+# Ignore temporary files and backup
+*.tmp
+*.bak
+*.old
+Thumbs.db
